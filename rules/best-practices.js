@@ -2,6 +2,16 @@
 
 module.exports = {
     rules: {
+        '@nfq/no-magic-numbers': [
+            'error',
+            {
+                detectObjects: false,
+                enforceConst: true,
+                ignore: [0, 1],
+                ignoreArrayIndexes: true,
+                ignoreFunctions: []
+            }
+        ], // disallow magic numbers http://eslint.org/docs/rules/no-magic-numbers
         'accessor-pairs': [
             'error',
             {
@@ -22,16 +32,6 @@ module.exports = {
         eqeqeq: ['error', 'always'], // require the use of === and !== http://eslint.org/docs/rules/eqeqeq
         'guard-for-in': 'warn', // make sure for-in loops have an if statement https://eslint.org/docs/rules/guard-for-in
         'max-classes-per-file': ['error', 1], // enforce a maximum number of classes per file https://eslint.org/docs/rules/max-classes-per-file
-        'nfq/no-magic-numbers': [
-            'error',
-            {
-                detectObjects: false,
-                enforceConst: true,
-                ignore: [0, 1],
-                ignoreArrayIndexes: true,
-                ignoreFunctions: []
-            }
-        ], // disallow magic numbers http://eslint.org/docs/rules/no-magic-numbers
         'no-alert': 'error', // disallow the use of alert, confirm, and prompt https://eslint.org/docs/rules/no-alert
         'no-caller': 'error', // disallow use of arguments.caller or arguments.callee https://eslint.org/docs/rules/no-caller
         'no-case-declarations': 'error', // disallow lexical declarations in case/default clauses http://eslint.org/docs/rules/no-case-declarations

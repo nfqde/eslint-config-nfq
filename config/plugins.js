@@ -3,7 +3,7 @@ module.exports = [
     'better-styled-components',
     'import',
     'jsx-a11y',
-    'nfq',
+    '@nfq',
     'no-unsanitized',
     'node',
     'perf-standard',
