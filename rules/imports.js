@@ -1,4 +1,4 @@
-/* eslint-disable sort-keys-fix/sort-keys-fix */
+/* eslint-disable @nfq/sort-keys */
 /* eslint-disable no-inline-comments */
 
 module.exports = {

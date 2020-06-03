@@ -1,5 +1,5 @@
 /* eslint-disable max-lines */
-/* eslint-disable sort-keys-fix/sort-keys-fix */
+/* eslint-disable @nfq/sort-keys */
 /* eslint-disable no-inline-comments */
 const SPACE_INDENT = 4;
 
@@ -354,7 +354,7 @@ module.exports = {
             }
         ], // enforce spacing before and after semicolons https://eslint.org/docs/rules/semi-spacing
         'semi-style': ['error', 'last'], // Enforce location of semicolons https://eslint.org/docs/rules/semi-style
-        'nfq/sort-keys': [
+        '@nfq/sort-keys': [
             'error',
             'asc',
             {

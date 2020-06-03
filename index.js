@@ -4,18 +4,18 @@ const settings = require('./config/settings');
 const rules = require('./rules');
 
 module.exports = {
-    globals: global,
-    parser: 'babel-eslint',
-    plugins,
-    extends: rules,
     env: {
-        es6: true,
         browser: true,
+        es6: true,
         node: true
     },
+    extends: rules,
+    globals: global,
+    parser: 'babel-eslint',
     parserOptions: {
-        ecmaVersion: 8,
-        ecmaFeatures: {jsx: true}
+        ecmaFeatures: {jsx: true},
+        ecmaVersion: 8
     },
+    plugins,
     settings
 };
