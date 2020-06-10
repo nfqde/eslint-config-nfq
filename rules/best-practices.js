@@ -9,7 +9,7 @@ module.exports = {
                 enforceConst: true,
                 ignore: [0, 1],
                 ignoreArrayIndexes: true,
-                ignoreFunctions: []
+                ignoreFunctions: ['setTimeout', 'setInterval']
             }
         ], // disallow magic numbers http://eslint.org/docs/rules/no-magic-numbers
         'accessor-pairs': [
