@@ -1,6 +1,6 @@
 {
   "name": "@nfq/eslint-config",
-  "version": "0.10.3-alpha",
+  "version": "0.11.1-beta",
   "engines": {
     "node": ">=8.10.0"
   },
@@ -16,7 +16,7 @@
     "config"
   ],
   "peerDependencies": {
-    "@nfq/eslint-plugin": "^0.5.4",
+    "@nfq/eslint-plugin": "^0.5.5",
     "babel-eslint": ">= 10",
     "eslint": "^7.0.0",
     "eslint-import-resolver-alias": "^1.1.2",

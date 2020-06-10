@@ -62,7 +62,17 @@ module.exports = {
             }
         ], // dynamic imports require a leading comment with a webpackChunkName https://github.com/benmosher/eslint-plugin-import/blob/ebafcbf59ec9f653b2ac2a0156ca3bcba0a7cf57/docs/rules/dynamic-import-chunkname.md
         'import/exports-last': 'off', // This rule enforces that all exports are declared at the bottom of the file. https://github.com/benmosher/eslint-plugin-import/blob/98acd6afd04dcb6920b81330114e146dc8532ea4/docs/rules/exports-last.md
-        'import/extensions': ['error', 'never'], // Ensure consistent use of file extension within the import path https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
+        'import/extensions': [
+            'error',
+            'never',
+            {
+                woff: 'always',
+                woff2: 'always',
+                ttf: 'always',
+                eot: 'always',
+                otf: 'always'
+            }
+        ], // Ensure consistent use of file extension within the import path https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
         'import/first': 'error', // disallow non-import statements appearing before import statements https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
         'import/group-exports': 'off', // Reports when named exports are not grouped together in a single export declaration or when multiple assignments to CommonJS module.exports or exports object are present in a single file. https://github.com/benmosher/eslint-plugin-import/blob/44a038c06487964394b1e15b64f3bd34e5d40cde/docs/rules/group-exports.md
         'import/max-dependencies': ['warn', {max: 20}], // Forbid modules to have too many dependencies https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/max-dependencies.md
@@ -134,6 +144,14 @@ module.exports = {
                     },
                     {
                         group: 'parent',
+                        pattern: '**/screens/**'
+                    },
+                    {
+                        group: 'parent',
+                        pattern: 'Screens/**'
+                    },
+                    {
+                        group: 'parent',
                         pattern: '**/containers/**'
                     },
                     {
@@ -168,7 +186,7 @@ module.exports = {
                 pathGroupsExcludedImportTypes: ['react', 'react-dom']
             }
         ], // ensure absolute imports are above relative imports and that unassigned imports are ignored https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
-        'import/prefer-default-export': 'error', // Require modules with a single export to use a default export https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
+        'import/prefer-default-export': 'off', // Require modules with a single export to use a default export https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
         'import/unambiguous': 'off' // Warn if a module could be mistakenly parsed as a script by a consumer leveraging Unambiguous JavaScript Grammar https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/unambiguous.md At the moment, it's not a thing.
     }
 };
