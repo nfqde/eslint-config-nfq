@@ -1,6 +1,6 @@
 {
   "name": "@nfq/eslint-config",
-  "version": "0.11.1-beta",
+  "version": "0.11.3-beta",
   "engines": {
     "node": ">=8.10.0"
   },

@@ -38,7 +38,7 @@ module.exports = {
         'no-constructor-return': 'off', // Disallow returning value in constructor https://eslint.org/docs/rules/no-constructor-return
         'no-div-regex': 'error', // disallow division operators explicitly at beginning of regular expression http://eslint.org/docs/rules/no-div-regex
         'no-else-return': ['error', {allowElseIf: true}], // disallow else after a return in an if https://eslint.org/docs/rules/no-else-return
-        'no-empty-function': ['error', {allow: ['arrowFunctions', 'methods']}], // disallow empty functions, except for standalone funcs/arrows http://eslint.org/docs/rules/no-empty-function
+        'no-empty-function': ['error', {allow: ['arrowFunctions', 'methods', 'asyncMethods']}], // disallow empty functions, except for standalone funcs/arrows http://eslint.org/docs/rules/no-empty-function
         'no-empty-pattern': 'error', // disallow empty destructuring patterns http://eslint.org/docs/rules/no-empty-pattern
         'no-eq-null': 'error', // disallow comparisons to null without a type-checking operator https://eslint.org/docs/rules/no-eq-null
         'no-eval': 'error', // disallow use of eval() https://eslint.org/docs/rules/no-eval
@@ -77,7 +77,8 @@ module.exports = {
                     'res', // for Express responses
                     'response', // for Express responses
                     '$scope', // for Angular 1 scopes
-                    'staticContext' // for ReactRouter context
+                    'staticContext', // for ReactRouter context
+                    'descriptor' // for decorators.
                 ],
                 props: true
             }
