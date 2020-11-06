@@ -68,18 +68,20 @@ module.exports = {
             'error',
             {
                 ignorePropertyModificationsFor: [
+                    '$scope', // for Angular 1 scopes
                     'acc', // for reduce accumulators
                     'accumulator', // for reduce accumulators
-                    'e', // for e.returnvalue
                     'ctx', // for Koa routing
+                    'descriptor', // for decorators
+                    'e', // for e.returnvalue
                     'item', // array foreach
+                    'key', // for reduce key value pairs
                     'req', // for Express requests
                     'request', // for Express requests
                     'res', // for Express responses
                     'response', // for Express responses
-                    '$scope', // for Angular 1 scopes
                     'staticContext', // for ReactRouter context
-                    'descriptor' // for decorators.
+                    'value' // for reduce key value pairs
                 ],
                 props: true
             }
