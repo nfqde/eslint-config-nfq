@@ -181,6 +181,30 @@ module.exports = {
                     {
                         group: 'sibling',
                         pattern: 'Utils/**'
+                    },
+                    {
+                        group: 'sibling',
+                        pattern: '**/configs/**'
+                    },
+                    {
+                        group: 'sibling',
+                        pattern: 'Configs'
+                    },
+                    {
+                        group: 'sibling',
+                        pattern: '**/fonts/**'
+                    },
+                    {
+                        group: 'sibling',
+                        pattern: 'Fonts/**'
+                    },
+                    {
+                        group: 'sibling',
+                        pattern: '**/images/**'
+                    },
+                    {
+                        group: 'sibling',
+                        pattern: 'Images'
                     }
                 ],
                 pathGroupsExcludedImportTypes: ['react', 'react-dom']
