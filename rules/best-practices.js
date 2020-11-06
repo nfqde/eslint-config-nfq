@@ -9,6 +9,7 @@ module.exports = {
                 enforceConst: true,
                 ignore: [0, 1],
                 ignoreArrayIndexes: true,
+                ignoreArrays: true,
                 ignoreFunctions: ['setTimeout', 'setInterval']
             }
         ], // disallow magic numbers http://eslint.org/docs/rules/no-magic-numbers
