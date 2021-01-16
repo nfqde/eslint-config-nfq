@@ -204,7 +204,7 @@ module.exports = {
                     },
                     {
                         group: 'sibling',
-                        pattern: 'Images'
+                        pattern: 'Images/**'
                     }
                 ],
                 pathGroupsExcludedImportTypes: ['react', 'react-dom']
