@@ -1,6 +1,6 @@
 {
   "name": "@nfq/eslint-config",
-  "version": "0.12.1",
+  "version": "1.0.0",
   "engines": {
     "node": ">=8.10.0"
   },
@@ -17,7 +17,7 @@
   ],
   "peerDependencies": {
     "@nfq/eslint-plugin": "^0.5.5",
-    "babel-eslint": ">= 10",
+    "@babel/eslint-parser": ">= 7",
     "eslint": "^7.5.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-array-func": "^3.1.7",
@@ -36,8 +36,8 @@
     "confusing-browser-globals": "^1.0.10"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.12.1",
     "@nfq/eslint-plugin": "^0.5.5",
-    "babel-eslint": ">= 10",
     "eslint": "^7.5.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-array-func": "^3.1.7",
