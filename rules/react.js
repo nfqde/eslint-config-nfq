@@ -246,7 +246,7 @@ module.exports = {
                 skipUndeclared: false
             }
         ], // Prevent missing props validation in a React component definition https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
-        'react/react-in-jsx-scope': 'error', // Prevent missing React when using JSX https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
+        'react/react-in-jsx-scope': 'off', // Prevent missing React when using JSX https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
         'react/require-default-props': ['error', {forbidDefaultForRequired: true}], // Enforce a defaultProps definition for every prop that is not a required prop https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/require-default-props.md
         'react/require-optimization': ['off', {allowDecorators: ['viewRender']}], // require a shouldComponentUpdate method, or PureRenderMixin https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-optimization.md
         'react/require-render-return': 'error', // Require render() methods to return something https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
