@@ -2,6 +2,15 @@
 
 module.exports = {
     rules: {
+        'redos/no-vulnerable': [
+            'error',
+            {
+                checker: 'auto',
+                ignoreErrors: true,
+                permittableComplexities: ['polynomial', 'exponential'],
+                timeout: 10000
+            }
+        ],
         'security/detect-buffer-noassert': 'error', // Detects calls to buffer with noAssert flag set https://github.com/nodesecurity/eslint-plugin-security
         'security/detect-child-process': 'error', // Detects instances of child_process & non-literal exec() https://github.com/nodesecurity/eslint-plugin-security/blob/master/docs/avoid-command-injection-node.md
         'security/detect-disable-mustache-escape': 'error', // Detects object.escapeMarkup = false, which can be used with some template engines to disable escaping of HTML entities. This can lead to Cross-Site Scripting (XSS) vulnerabilities. https://github.com/nodesecurity/eslint-plugin-security

@@ -9,6 +9,9 @@ module.exports = [
     'perf-standard',
     'promise',
     'react',
+    'react-hooks',
+    'react-hooks-ssr',
+    'redos',
     'security',
     'sort-destructure-keys'
 ];
