@@ -6,6 +6,7 @@ const imports = require.resolve('./imports');
 const node = require.resolve('./node');
 const performance = require.resolve('./performance');
 const promises = require.resolve('./promises');
+const reactHooks = require.resolve('./react-hooks');
 const react = require.resolve('./react');
 const reactA11y = require.resolve('./react-a11y');
 const sanitize = require.resolve('./sanitize');
@@ -24,6 +25,7 @@ module.exports = [
     node,
     performance,
     promises,
+    reactHooks,
     react,
     reactA11y,
     sanitize,
