@@ -1,12 +1,13 @@
 {
   "name": "@nfq/eslint-config",
-  "version": "1.2.8",
+  "version": "2.0.0",
   "engines": {
     "node": ">= 12.0.0"
   },
   "description": "Eslint configuration for all nfq projects",
   "main": "index.js",
   "scripts": {
+    "deploy": "standard-version && git push --follow-tags origin master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
