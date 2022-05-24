@@ -1,9 +1,10 @@
 module.exports = [
+    '@nfq',
     'array-func',
     'better-styled-components',
     'import',
+    'jsdoc',
     'jsx-a11y',
-    '@nfq',
     'no-unsanitized',
     'node',
     'perf-standard',
