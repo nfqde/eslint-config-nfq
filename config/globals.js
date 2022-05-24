@@ -1,7 +1,7 @@
 module.exports = {
-    assert: false,
     after: false,
     afterEach: false,
+    assert: false,
     before: false,
     beforeEach: false,
     chai: false,

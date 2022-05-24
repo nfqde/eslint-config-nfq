@@ -10,7 +10,7 @@ module.exports = {
                 permittableComplexities: ['polynomial', 'exponential'],
                 timeout: 10000
             }
-        ],
+        ], // Detects regexes vulnerable to ReDOS attacks https://makenowjust-labs.github.io/recheck/docs/usage/as-eslint-plugin/
         'security/detect-buffer-noassert': 'error', // Detects calls to buffer with noAssert flag set https://github.com/nodesecurity/eslint-plugin-security
         'security/detect-child-process': 'error', // Detects instances of child_process & non-literal exec() https://github.com/nodesecurity/eslint-plugin-security/blob/master/docs/avoid-command-injection-node.md
         'security/detect-disable-mustache-escape': 'error', // Detects object.escapeMarkup = false, which can be used with some template engines to disable escaping of HTML entities. This can lead to Cross-Site Scripting (XSS) vulnerabilities. https://github.com/nodesecurity/eslint-plugin-security
