@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/nfqde/eslint-config-nfq/compare/v2.0.0...v2.1.0) (2022-05-24)
+
+
+### Features
+
+* **jsdoc:** New jsdoc parser plugin ([#12](https://github.com/nfqde/eslint-config-nfq/issues/12)) ([a495a28](https://github.com/nfqde/eslint-config-nfq/commit/a495a282838132377d18b6615e39485dedbce3f2))
+
 ## 2.0.0 (2022-02-24)
 
 
