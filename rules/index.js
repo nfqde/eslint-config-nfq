@@ -3,6 +3,7 @@ const bestPractices = require.resolve('./best-practices');
 const errors = require.resolve('./errors');
 const es6 = require.resolve('./es6');
 const imports = require.resolve('./imports');
+const jsdoc = require.resolve('./jsdoc');
 const node = require.resolve('./node');
 const performance = require.resolve('./performance');
 const promises = require.resolve('./promises');
@@ -22,6 +23,7 @@ module.exports = [
     errors,
     es6,
     imports,
+    jsdoc,
     node,
     performance,
     promises,
