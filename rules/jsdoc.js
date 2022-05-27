@@ -59,9 +59,10 @@ module.exports = {
         'jsdoc/require-jsdoc': [
             'error',
             {
+                contexts: ['VariableDeclaration > VariableDeclarator > ArrowFunctionExpression'],
                 publicOnly: false,
                 require: {
-                    ArrowFunctionExpression: true,
+                    ArrowFunctionExpression: false,
                     ClassDeclaration: true,
                     ClassExpression: true,
                     FunctionDeclaration: true,
