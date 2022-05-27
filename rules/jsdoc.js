@@ -56,7 +56,20 @@ module.exports = {
         'jsdoc/require-example': 'off', // Reports missing example in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-example
         'jsdoc/require-file-overview': 'off', // Reports missing file overview in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-file-overview
         'jsdoc/require-hyphen-before-param-description': ['error', 'never'], // Reports missing hyphen before param description in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-hyphen-before-param-description
-        'jsdoc/require-jsdoc': 'error', // Reports missing JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-jsdoc
+        'jsdoc/require-jsdoc': [
+            'error',
+            {
+                publicOnly: false,
+                require: {
+                    ArrowFunctionExpression: true,
+                    ClassDeclaration: true,
+                    ClassExpression: true,
+                    FunctionDeclaration: true,
+                    FunctionExpression: true,
+                    MethodDefinition: true
+                }
+            }
+        ], // Reports missing JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-jsdoc
         'jsdoc/require-param': [
             'error',
             {
