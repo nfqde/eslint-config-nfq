@@ -13,7 +13,8 @@ module.exports = {
         'jsdoc/check-param-names': [
             'error',
             {
-                checkDestructured: true,
+                checkDestructured: false,
+                checkRestProperty: false,
                 enableFixer: true
             }
         ], // Reports invalid parameter names in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#check-param-names
@@ -76,10 +77,11 @@ module.exports = {
             {
                 checkDestructured: true,
                 checkDestructuredRoots: true,
-                checkRestProperty: true,
+                checkRestProperty: false,
                 enableFixer: true,
                 enableRestElementFixer: true,
                 enableRootFixer: true,
+                unnamedRootBase: ['props', 'obj', 'root'],
                 useDefaultObjectProperties: true
             }
         ], // Reports missing params in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-param
@@ -97,7 +99,7 @@ module.exports = {
         'jsdoc/require-throws': 'error', // Reports missing throws in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-throws
         'jsdoc/require-yields': 'error', // Reports missing yields in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-yields
         'jsdoc/require-yields-check': 'error', // Reports missing yields in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-yields-check
-        'jsdoc/sort-tags': 'error', // Reports unsorted JSDoc tags. https://github.com/gajus/eslint-plugin-jsdoc#sort-tags
+        'jsdoc/sort-tags': 'off', // Reports unsorted JSDoc tags. https://github.com/gajus/eslint-plugin-jsdoc#sort-tags
         'jsdoc/tag-lines': 'off' // Reports unsorted JSDoc tags. https://github.com/gajus/eslint-plugin-jsdoc#tag-lines
     }
 };
