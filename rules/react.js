@@ -239,7 +239,7 @@ module.exports = {
         'react/prefer-read-only-props': 'off', // Enforce that props are read-only https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md
         'react/prefer-stateless-function': ['off', {ignorePureComponents: true}], // Require stateless functions when not using lifecycle methods, setState or ref https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
         'react/prop-types': [
-            'error',
+            'off',
             {
                 customValidators: [],
                 ignore: [],
