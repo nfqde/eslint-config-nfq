@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.5](https://github.com/nfqde/eslint-config-nfq/compare/v2.1.4...v2.1.5) (2022-06-08)
+
+
+### Bug Fixes
+
+* **jsdoc:** fixe some rules ([#17](https://github.com/nfqde/eslint-config-nfq/issues/17)) ([e642d0d](https://github.com/nfqde/eslint-config-nfq/commit/e642d0dece2cfb69c07b80323d4885c8cff1ebfc))
+
 ### [2.1.4](https://github.com/nfqde/eslint-config-nfq/compare/v2.1.3...v2.1.4) (2022-05-30)
 
 
