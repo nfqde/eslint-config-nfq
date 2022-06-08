@@ -217,7 +217,10 @@ module.exports = {
         'no-array-constructor': 'error', // disallow use of the Array constructor https://eslint.org/docs/rules/no-array-constructor
         'no-bitwise': 'error', // disallow use of bitwise operators https://eslint.org/docs/rules/no-bitwise
         'no-continue': 'error', // disallow use of the continue statement https://eslint.org/docs/rules/no-continue
-        'no-inline-comments': 'error', // disallow comments inline after code https://eslint.org/docs/rules/no-inline-comments
+        'no-inline-comments': [
+            'error',
+            {ignorePattern: '(@type|css) .+'}
+        ], // disallow comments inline after code https://eslint.org/docs/rules/no-inline-comments
         'no-lonely-if': 'error', // disallow if as the only statement in an else block https://eslint.org/docs/rules/no-lonely-if
         'no-mixed-operators': [
             'error',

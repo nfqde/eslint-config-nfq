@@ -47,10 +47,7 @@ module.exports = {
         'jsdoc/no-multi-asterisks': 'error', // Prevents use of multiple asterisks at the beginning of lines. https://github.com/gajus/eslint-plugin-jsdoc#no-multi-asterisks
         'jsdoc/no-restricted-syntax': 'off', // Reports invalid JSDoc syntax. https://github.com/gajus/eslint-plugin-jsdoc#no-restricted-syntax
         'jsdoc/no-types': 'off', // Reports redundant types in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#no-types
-        'jsdoc/no-undefined-types': [
-            'error',
-            {definedTypes: ['JSX']}
-        ], // Reports undefined types in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#no-undefined-types
+        'jsdoc/no-undefined-types': 'off', // Reports undefined types in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#no-undefined-types
         'jsdoc/require-asterisk-prefix': ['error', 'always'], // Requires that each JSDoc line starts with an *. https://github.com/gajus/eslint-plugin-jsdoc#require-asterisk-prefix
         'jsdoc/require-description': ['error', {exemptedBy: ['type', 'inheritdoc']}], // Reports missing description in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-description
         'jsdoc/require-description-complete-sentence': 'error', // Reports missing complete sentence in JSDoc description. https://github.com/gajus/eslint-plugin-jsdoc#require-description-complete-sentence
