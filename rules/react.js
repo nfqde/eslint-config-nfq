@@ -98,7 +98,7 @@ module.exports = {
         ], // Enforce linebreaks in curly braces in JSX attributes and expressions. https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-newline.md
         'react/jsx-curly-spacing': ['error', 'never', {allowMultiline: true}], // Enforce or disallow spaces inside of curly braces in JSX attributes https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
         'react/jsx-equals-spacing': ['error', 'never'], // Enforce spacing around jsx equals signs https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
-        'react/jsx-filename-extension': ['error', {extensions: ['.jsx']}], // only .jsx files may have JSX https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+        'react/jsx-filename-extension': ['error', {extensions: ['.jsx', '.tsx']}], // only .jsx files may have JSX https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
         'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'], // Require that the first prop in a JSX element be on a new line when the element is multiline https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
         'react/jsx-fragments': ['error', 'syntax'], // Enforce shorthand or standard form for React fragments https://github.com/yannickcr/eslint-plugin-react/blob/bc976b837abeab1dffd90ac6168b746a83fc83cc/docs/rules/jsx-fragments.md
         'react/jsx-handler-names': [
