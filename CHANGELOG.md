@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.6](https://github.com/nfqde/eslint-config-nfq/compare/v2.1.5...v2.1.6) (2022-07-19)
+
+
+### Bug Fixes
+
+* **JSX:** fix jsx file extension rule ([#18](https://github.com/nfqde/eslint-config-nfq/issues/18)) ([f225909](https://github.com/nfqde/eslint-config-nfq/commit/f225909dc9f245395c077821211a6caf54b5811a))
+
 ### [2.1.5](https://github.com/nfqde/eslint-config-nfq/compare/v2.1.4...v2.1.5) (2022-06-08)
 
 
