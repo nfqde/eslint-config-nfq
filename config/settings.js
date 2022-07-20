@@ -3,7 +3,13 @@ module.exports = {
         alias: {
             extensions: [
                 '.js',
+                '.ts',
+                '.cjs',
+                '.mjs',
+                '.cts',
+                '.mts',
                 '.jsx',
+                '.tsx',
                 '.json',
                 '.css',
                 '.png',
