@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/nfqde/eslint-config-nfq/compare/v2.1.6...v2.2.0) (2022-07-20)
+
+
+### Features
+
+* **Rules:** Add typescript support ([#19](https://github.com/nfqde/eslint-config-nfq/issues/19)) ([30c2f0c](https://github.com/nfqde/eslint-config-nfq/commit/30c2f0cb374ee8d75367a8cadbc4207b939a24e1))
+
 ### [2.1.6](https://github.com/nfqde/eslint-config-nfq/compare/v2.1.5...v2.1.6) (2022-07-19)
 
 
