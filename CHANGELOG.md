@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.3](https://github.com/nfqde/eslint-config-nfq/compare/v2.2.2...v2.2.3) (2022-07-20)
+
+
+### Bug Fixes
+
+* **Rules:** deactivate typpes for jsdoc ([#22](https://github.com/nfqde/eslint-config-nfq/issues/22)) ([7ba9a8b](https://github.com/nfqde/eslint-config-nfq/commit/7ba9a8bf046110edc12bceb627252be861706c8f))
+
 ### [2.2.2](https://github.com/nfqde/eslint-config-nfq/compare/v2.2.1...v2.2.2) (2022-07-20)
 
 
