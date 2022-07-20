@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/nfqde/eslint-config-nfq/compare/v2.2.0...v2.2.1) (2022-07-20)
+
+
+### Bug Fixes
+
+* **Rules:** @typescript-eslint/keyword-spacing ([#20](https://github.com/nfqde/eslint-config-nfq/issues/20)) ([f190b7a](https://github.com/nfqde/eslint-config-nfq/commit/f190b7aea19a22e61cfc40df78494128313eb7cc))
+
 ## [2.2.0](https://github.com/nfqde/eslint-config-nfq/compare/v2.1.6...v2.2.0) (2022-07-20)
 
 
