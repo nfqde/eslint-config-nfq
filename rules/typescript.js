@@ -48,8 +48,7 @@ module.exports = {
             'error',
             {
                 after: true,
-                before: true,
-                exceptAfterOverload: true
+                before: true
             }
         ],
         '@typescript-eslint/lines-between-class-members': [
