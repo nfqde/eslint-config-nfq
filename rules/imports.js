@@ -95,7 +95,7 @@ module.exports = {
             {maxDepth: Infinity}
         ], // Forbid cyclical dependencies between modules https://github.com/benmosher/eslint-plugin-import/blob/d81f48a2506182738409805f5272eff4d77c9348/docs/rules/no-cycle.md
         'import/no-default-export': 0, // forbid default exports. this is a terrible rule, do not use it. https://github.com/benmosher/eslint-plugin-import/blob/44a038c06487964394b1e15b64f3bd34e5d40cde/docs/rules/no-default-export.md
-        'import/no-duplicates': 2, // disallow duplicate imports https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
+        'import/no-duplicates': ['error', {considerQueryString: true}], // disallow duplicate imports https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
         'import/no-dynamic-require': 0, // Forbid require() calls with expressions https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md
         'import/no-internal-modules': [0, {allow: []}], // prevent importing the submodules of other modules https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md
         'import/no-named-default': 2, // Prevent importing the default as if it were named https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
@@ -122,7 +122,7 @@ module.exports = {
                     caseInsensitive: true,
                     order: 'asc'
                 },
-                groups: ['builtin', 'external', 'parent', 'internal', 'sibling'],
+                groups: ['builtin', 'external', 'parent', 'internal', 'sibling', 'type'],
                 'newlines-between': 'always',
                 pathGroups: [
                     {

@@ -23,7 +23,6 @@ module.exports = {
         'no-confusing-arrow': ['error', {allowParens: true}], // disallow arrow functions where they could be confused with comparisons https://eslint.org/docs/rules/no-confusing-arrow
         'no-const-assign': 'error', // disallow modifying variables that are declared using const https://eslint.org/docs/rules/no-const-assign
         'no-dupe-class-members': 'error', // disallow duplicate class members https://eslint.org/docs/rules/no-dupe-class-members
-        'no-duplicate-imports': ['error', {includeExports: true}], // disallow importing from the same path more than once https://eslint.org/docs/rules/no-duplicate-imports replaced by https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
         'no-new-symbol': 'error', // disallow symbol constructor https://eslint.org/docs/rules/no-new-symbol
         'no-restricted-imports': [
             'off',
