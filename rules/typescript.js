@@ -28,17 +28,7 @@ module.exports = {
         ],
         '@typescript-eslint/default-param-last': 'error',
         '@typescript-eslint/dot-notation': ['error', {allowKeywords: true}],
-        '@typescript-eslint/explicit-function-return-type': [
-            'error',
-            {
-                allowConciseArrowFunctionExpressionsStartingWithVoid: false,
-                allowDirectConstAssertionInArrowFunctions: true,
-                allowedNames: [],
-                allowExpressions: true,
-                allowHigherOrderFunctions: true,
-                allowTypedFunctionExpressions: true
-            }
-        ],
+        '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/explicit-member-accessibility': ['error', {accessibility: 'no-public'}],
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/func-call-spacing': ['error', 'never'],
@@ -105,7 +95,7 @@ module.exports = {
         '@typescript-eslint/no-namespace': 'error',
         '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
-        '@typescript-eslint/no-non-null-assertion': 'warn',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-redeclare': 'error',
         '@typescript-eslint/no-redundant-type-constituents': 'warn',
         '@typescript-eslint/no-require-imports': 'warn',
@@ -230,6 +220,8 @@ module.exports = {
         'object-curly-spacing': 'off',
         'padding-line-between-statements': 'off',
         quotes: 'off',
+        'react/default-props-match-prop-types': 'off',
+        'react/require-default-props': 'off',
         semi: 'off',
         'space-before-blocks': 'off',
         'space-before-function-paren': 'off',
