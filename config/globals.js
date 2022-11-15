@@ -10,5 +10,7 @@ module.exports = {
     Cypress: false,
     describe: false,
     expect: false,
-    it: false
+    it: false,
+    JSX: false,
+    NodeJs: false
 };
