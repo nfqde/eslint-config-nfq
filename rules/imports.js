@@ -76,7 +76,13 @@ module.exports = {
         ], // Ensure consistent use of file extension within the import path https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
         'import/first': 2, // disallow non-import statements appearing before import statements https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
         'import/group-exports': 0, // Reports when named exports are not grouped together in a single export declaration or when multiple assignments to CommonJS module.exports or exports object are present in a single file. https://github.com/benmosher/eslint-plugin-import/blob/44a038c06487964394b1e15b64f3bd34e5d40cde/docs/rules/group-exports.md
-        'import/max-dependencies': [1, {max: 20}], // Forbid modules to have too many dependencies https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/max-dependencies.md
+        'import/max-dependencies': [
+            1,
+            {
+                max: 20,
+                ignoreTypeImports: false
+            }
+        ], // Forbid modules to have too many dependencies https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/max-dependencies.md
         'import/newline-after-import': 2, // Require a newline after the last import/require in a group https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
         'import/no-absolute-path': 2, // Forbid import of modules using absolute paths https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-absolute-path.md
         'import/no-anonymous-default-export': [
