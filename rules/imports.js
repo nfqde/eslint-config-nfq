@@ -80,7 +80,7 @@ module.exports = {
             1,
             {
                 max: 20,
-                ignoreTypeImports: false
+                ignoreTypeImports: true
             }
         ], // Forbid modules to have too many dependencies https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/max-dependencies.md
         'import/newline-after-import': 2, // Require a newline after the last import/require in a group https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
