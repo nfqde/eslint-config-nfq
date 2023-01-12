@@ -81,7 +81,6 @@ module.exports = {
             {enforceForRenamedProperties: false}
         ], // Prefer destructuring from arrays and objects https://eslint.org/docs/rules/prefer-destructuring
         'prefer-numeric-literals': 'error', // disallow parseInt() in favor of binary, octal, and hexadecimal literals https://eslint.org/docs/rules/prefer-numeric-literals
-        'prefer-reflect': 'off', // suggest using Reflect methods where applicable https://eslint.org/docs/rules/prefer-reflect
         'prefer-rest-params': 'error', // use rest parameters instead of arguments https://eslint.org/docs/rules/prefer-rest-params
         'prefer-spread': 'error', // suggest using the spread operator instead of .apply() https://eslint.org/docs/rules/prefer-spread
         'prefer-template': 'error', // suggest using template literals instead of string concatenation https://eslint.org/docs/rules/prefer-template
