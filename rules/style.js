@@ -152,13 +152,6 @@ module.exports = {
         ], // enforce position of line comments https://eslint.org/docs/rules/line-comment-position
         'linebreak-style': ['error', 'unix'], // disallow mixed 'LF' and 'CRLF' as linebreaks https://eslint.org/docs/rules/linebreak-style
         'lines-around-comment': 'off', // enforces empty lines around comments https://eslint.org/docs/rules/lines-around-comment
-        'lines-around-directive': [
-            'error',
-            {
-                after: 'always',
-                before: 'always'
-            }
-        ], // require or disallow newlines around directives https://eslint.org/docs/rules/lines-around-directive
         'lines-between-class-members': [
             'error',
             'always',
@@ -208,8 +201,6 @@ module.exports = {
             }
         ], // require a capital letter for constructors https://eslint.org/docs/rules/new-cap
         'new-parens': ['error', 'always'], // disallow the omission of parentheses when invoking a constructor with no arguments https://eslint.org/docs/rules/new-parens
-        'newline-after-var': 'off', // allow/disallow an empty newline after var statement https://eslint.org/docs/rules/newline-after-var
-        'newline-before-return': 'error', // https://eslint.org/docs/rules/newline-before-return
         'newline-per-chained-call': [
             'error',
             {ignoreChainWithDepth: 4}
@@ -309,6 +300,21 @@ module.exports = {
                 blankLine: 'any',
                 next: ['const', 'let', 'var'],
                 prev: ['const', 'let', 'var']
+            },
+            {
+                blankLine: "always",
+                prev: "directive",
+                next: "*"
+            },
+            {
+                blankLine: "any",
+                prev: "directive",
+                next: "directive"
+            },
+            {
+                blankLine: "always",
+                prev: "*",
+                next: "return"
             }
         ], // Require or disallow padding lines between statements https://eslint.org/docs/rules/padding-line-between-statements
         'prefer-exponentiation-operator': 'error', // Disallow the use of Math.pow in favor of the ** operator https://eslint.org/docs/rules/prefer-exponentiation-operator
