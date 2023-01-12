@@ -252,7 +252,6 @@ module.exports = {
                 selector: 'WithStatement'
             }
         ], // disallow certain syntax forms https://eslint.org/docs/rules/no-restricted-syntax
-        'no-spaced-func': 'error', // disallow space between function identifier and application https://eslint.org/docs/rules/no-spaced-func
         'no-tabs': 'error', // disallow tab characters entirely https://eslint.org/docs/rules/no-tabs
         'no-ternary': 'off', // disallow the use of ternary operators https://eslint.org/docs/rules/no-ternary
         'no-trailing-spaces': 'error', // disallow trailing whitespace at the end of lines https://eslint.org/docs/rules/no-trailing-spaces
