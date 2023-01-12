@@ -80,7 +80,7 @@ module.exports = {
         'func-style': ['off', 'expression'], // enforces use of function declarations or expressions https://eslint.org/docs/rules/func-style
         'function-call-argument-newline': ['error', 'consistent'], // https://eslint.org/docs/rules/function-call-argument-newline
         'function-paren-newline': ['error', 'consistent'], // enforce consistent line breaks inside function parentheses https://eslint.org/docs/rules/function-paren-newline
-        'id-blacklist': 'off', // Blacklist certain identifiers to prevent them being used https://eslint.org/docs/rules/id-blacklist
+        'id-denylist': 'off', // Blacklist certain identifiers to prevent them being used https://eslint.org/docs/rules/id-denylist
         'id-length': 'off', // this option enforces minimum and maximum identifier lengths (variable names, property names etc.) https://eslint.org/docs/rules/id-length
         'id-match': 'off', // require identifiers to match the provided regular expression https://eslint.org/docs/rules/id-match
         'implicit-arrow-linebreak': ['error', 'beside'], // Enforce the location of arrow function bodies with implicit returns https://eslint.org/docs/rules/implicit-arrow-linebreak
