@@ -49,7 +49,6 @@ module.exports = {
         'no-unsafe-negation': 'error', // disallow negating the left operand of relational operators https://eslint.org/docs/rules/no-unsafe-negation
         'require-atomic-updates': 'off', // Disallow assignments that can lead to race conditions due to usage of await or yield https://eslint.org/docs/rules/require-atomic-updates
         'use-isnan': 'error', // disallow comparisons with the value NaN https://eslint.org/docs/rules/use-isnan
-        'valid-jsdoc': 'off', // ensure JSDoc comments are valid https://eslint.org/docs/rules/valid-jsdoc
         'valid-typeof': ['error', {requireStringLiterals: true}] // ensure that the results of typeof are compared against a valid string https://eslint.org/docs/rules/valid-typeof
     }
 };
