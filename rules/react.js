@@ -169,7 +169,6 @@ module.exports = {
                 html: 'enforce'
             }
         ], // Disallow JSX props spreading https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
-        'react/jsx-sort-default-props': ['error', {ignoreCase: true}], // Enforce defaultProps declarations alphabetical sorting https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-sort-default-props.md
         'react/jsx-sort-props': [
             'error',
             {
@@ -302,6 +301,7 @@ module.exports = {
                 ]
             }
         ], // Enforce component methods order https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/sort-comp.md
+        'react/sort-default-props': ['error', {ignoreCase: true}], // Enforce defaultProps declarations alphabetical sorting https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/sort-default-props.md
         'react/sort-prop-types': [
             'error',
             {
