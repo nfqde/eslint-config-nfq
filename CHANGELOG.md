@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.10](https://github.com/nfqde/eslint-config-nfq/compare/v2.2.9...v2.2.10) (2023-03-02)
+
+
+### Bug Fixes
+
+* **es6:** Remove depricated rule: prefer-reflect ([#31](https://github.com/nfqde/eslint-config-nfq/issues/31)) ([d582b4f](https://github.com/nfqde/eslint-config-nfq/commit/d582b4fb104e4921df9c3e8c98858aba7b43926d))
+* **jsdoc:** Remove depricated jsdoc rules ([#29](https://github.com/nfqde/eslint-config-nfq/issues/29)) ([1d4ee15](https://github.com/nfqde/eslint-config-nfq/commit/1d4ee15abc882654a60055821483cac386462100))
+* **React:** Repalace depricated rule with sort-default-props ([#35](https://github.com/nfqde/eslint-config-nfq/issues/35)) ([1348de8](https://github.com/nfqde/eslint-config-nfq/commit/1348de8a19e40a7a7cf5e05da5dac2097754c4b3))
+* **Style:** Remove depricated and already replaced no-spaced-func ([#33](https://github.com/nfqde/eslint-config-nfq/issues/33)) ([266b936](https://github.com/nfqde/eslint-config-nfq/commit/266b9364416c138a60451d7021e95104eef6ae69))
+* **Style:** Replace depricated line between rules ([#34](https://github.com/nfqde/eslint-config-nfq/issues/34)) ([581a48d](https://github.com/nfqde/eslint-config-nfq/commit/581a48d8582dd7fc8a9c40f9466424213377047a))
+* **Style:** Replace depricated rule id-blacklist with id-denylist ([#32](https://github.com/nfqde/eslint-config-nfq/issues/32)) ([b804fe6](https://github.com/nfqde/eslint-config-nfq/commit/b804fe6c5d5ce6d28a916329dc516fbf4519353c))
+* **Variables:** Remove depricated rule: no-catch-shadow ([#30](https://github.com/nfqde/eslint-config-nfq/issues/30)) ([ed9ac8c](https://github.com/nfqde/eslint-config-nfq/commit/ed9ac8c74ceeba62adb32dea18b60e8a40f23c0e))
+
 ### [2.2.9](https://github.com/nfqde/eslint-config-nfq/compare/v2.2.8...v2.2.9) (2022-11-15)
 
 
