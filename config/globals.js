@@ -11,6 +11,7 @@ module.exports = {
     describe: false,
     expect: false,
     it: false,
+    JQuery: false,
     JSX: false,
     NodeJs: false
 };

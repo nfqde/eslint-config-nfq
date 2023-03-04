@@ -126,7 +126,7 @@ module.exports = {
                 VariableDeclarator: 'first'
             }
         ], // this option sets a specific tab width for your code https://eslint.org/docs/rules/indent
-        'jsx-quotes': ['off', 'prefer-double'], // specify whether double or single quotes should be used in JSX attributes https://eslint.org/docs/rules/jsx-quotes
+        'jsx-quotes': ['error', 'prefer-double'], // specify whether double or single quotes should be used in JSX attributes https://eslint.org/docs/rules/jsx-quotes
         'key-spacing': [
             'error',
             {
