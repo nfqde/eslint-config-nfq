@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/nfqde/eslint-config-nfq/compare/v2.2.11...v2.3.0) (2023-04-21)
+
+
+### Features
+
+* **Curly, NoMagic:** Update rules to be a bit more lax ([#37](https://github.com/nfqde/eslint-config-nfq/issues/37)) ([a211764](https://github.com/nfqde/eslint-config-nfq/commit/a21176478f62fe8fdae46566290a0a0eff6c593b))
+
 ### [2.2.11](https://github.com/nfqde/eslint-config-nfq/compare/v2.2.10...v2.2.11) (2023-03-04)
 
 
