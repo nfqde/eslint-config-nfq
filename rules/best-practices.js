@@ -10,7 +10,7 @@ module.exports = {
                 ignore: [0, 1],
                 ignoreArrayIndexes: true,
                 ignoreArrays: true,
-                ignoreFunctions: ['setTimeout', 'setInterval']
+                ignoreFunctions: ['setTimeout', 'setInterval', 'spacing']
             }
         ], // disallow magic numbers http://eslint.org/docs/rules/no-magic-numbers
         'accessor-pairs': [
@@ -25,7 +25,7 @@ module.exports = {
         'class-methods-use-this': ['off', {exceptMethods: []}], // enforce that class methods use "this" http://eslint.org/docs/rules/class-methods-use-this
         complexity: ['warn', {max: 20}], // specify the maximum cyclomatic complexity allowed in a program https://eslint.org/docs/rules/complexity
         'consistent-return': 'error', // require return statements to either always or never specify values https://eslint.org/docs/rules/consistent-return
-        curly: 'error', // specify curly brace conventions for all control statements https://eslint.org/docs/rules/curly#top
+        curly: ['error', 'multi-line', 'consistent'], // specify curly brace conventions for all control statements https://eslint.org/docs/rules/curly#top
         'default-case': ['warn', {commentPattern: '^no default$'}], // require default case in switch statements https://eslint.org/docs/rules/default-case
         'default-param-last': 'error', // Checks if default params are last https://eslint.org/docs/rules/default-param-last
         'dot-location': ['error', 'property'], // enforces consistent newlines before or after dots http://eslint.org/docs/rules/dot-location
