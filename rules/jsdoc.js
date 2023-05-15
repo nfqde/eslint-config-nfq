@@ -40,7 +40,6 @@ module.exports = {
 
             }
         ], // Controls how and whether jsdoc blocks can be expressed as single or multiple line blocks. https://github.com/gajus/eslint-plugin-jsdoc#multiline-blocks
-        'jsdoc/newline-after-description': ['error', 'always'], // Reports missing newline after description in JSDoc comments.
         'jsdoc/no-bad-blocks': 'error', // Reports invalid JSDoc block tags. https://github.com/gajus/eslint-plugin-jsdoc#no-bad-blocks
         'jsdoc/no-defaults': 'off', // Reports default params if used. https://github.com/gajus/eslint-plugin-jsdoc#no-defaults
         'jsdoc/no-missing-syntax': 'off', // Reports missing JSDoc syntax. https://github.com/gajus/eslint-plugin-jsdoc#no-missing-syntax
