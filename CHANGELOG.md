@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2](https://github.com/nfqde/eslint-config-nfq/compare/v2.3.1...v2.3.2) (2023-05-17)
+
+
+### Bug Fixes
+
+* **style-prop-object:** Remove this rule because its dump ([#40](https://github.com/nfqde/eslint-config-nfq/issues/40)) ([23ef844](https://github.com/nfqde/eslint-config-nfq/commit/23ef84479d77c8b9c841a8177bfe2a5bb5227661))
+
 ### [2.3.1](https://github.com/nfqde/eslint-config-nfq/compare/v2.3.0...v2.3.1) (2023-05-17)
 
 
