@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.1](https://github.com/nfqde/eslint-config-nfq/compare/v2.3.0...v2.3.1) (2023-05-17)
+
+
+### Bug Fixes
+
+* **no-undefined:** Remove rule because it makes no sense in typescript ([#39](https://github.com/nfqde/eslint-config-nfq/issues/39)) ([6c90eca](https://github.com/nfqde/eslint-config-nfq/commit/6c90ecabbfd25501b032f266d468cdd7d483e5ce))
+
 ## [2.3.0](https://github.com/nfqde/eslint-config-nfq/compare/v2.2.11...v2.3.0) (2023-04-21)
 
 
