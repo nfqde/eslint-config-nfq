@@ -313,7 +313,7 @@ module.exports = {
         ], // Enforce propTypes declarations alphabetical sorting https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
         'react/state-in-constructor': ['error', 'always'], // Enforce state initialization style https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/state-in-constructor.md
         'react/static-property-placement': ['error', 'static public field'], // Enforces where React component static properties should be positioned https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md
-        'react/style-prop-object': 'error', // Require style prop value be an object or var https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
+        'react/style-prop-object': 'off', // Require style prop value be an object or var https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
         'react/void-dom-elements-no-children': 'error' // Prevent void DOM elements from receiving children https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
     }
 };
