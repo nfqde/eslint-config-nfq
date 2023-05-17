@@ -219,6 +219,7 @@ module.exports = {
         'no-return-await': 'off',
         'no-shadow': 'off',
         'no-throw-literal': 'off',
+        'no-undefined': 'off',
         'no-unused-expressions': 'off',
         'no-unused-vars': 'off',
         'no-use-before-define': 'off',
