@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/nfqde/eslint-config-nfq/compare/v2.3.2...v2.4.0) (2023-05-28)
+
+
+### Features
+
+* **Cypress:** Add rule exeptions for cypress tests ([#41](https://github.com/nfqde/eslint-config-nfq/issues/41)) ([59a5882](https://github.com/nfqde/eslint-config-nfq/commit/59a5882bf16d965f26710eb46ab30104db1ac537))
+
 ### [2.3.2](https://github.com/nfqde/eslint-config-nfq/compare/v2.3.1...v2.3.2) (2023-05-17)
 
 
