@@ -3,6 +3,7 @@ const plugins = require('./config/plugins');
 const settings = require('./config/settings');
 const rules = require('./rules');
 const typescript = require('./rules/typescript');
+const typescriptCypress = require('./rules/typescript-cypress-exeptions');
 
 module.exports = {
     env: {
@@ -13,6 +14,16 @@ module.exports = {
     extends: rules,
     globals: global,
     overrides: [
+        {
+            files: ['**/*.cy.{ts,cts,mts,tsx}'],
+            parser: '@typescript-eslint/parser',
+            parserOptions: {project: '**/tsconfig*.json'},
+            plugins: ['@typescript-eslint'],
+            rules: {
+                ...typescript.rules,
+                ...typescriptCypress.rules
+            }
+        },
         {
             files: ['**/*.{ts,cts,mts,tsx}'],
             parser: '@typescript-eslint/parser',
