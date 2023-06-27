@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.4.3](https://github.com/nfqde/eslint-config-nfq/compare/v2.4.2...v2.4.3) (2023-06-27)
+
+
+### Bug Fixes
+
+* **Typescript:** Allow static classes for Architecture purposes ([#44](https://github.com/nfqde/eslint-config-nfq/issues/44)) ([ad0c225](https://github.com/nfqde/eslint-config-nfq/commit/ad0c22588f50fd8346950120d2c67b75e0ab8502))
+
 ### [2.4.2](https://github.com/nfqde/eslint-config-nfq/compare/v2.4.1...v2.4.2) (2023-06-10)
 
 
