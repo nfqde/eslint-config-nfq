@@ -181,7 +181,7 @@ module.exports = {
         '@typescript-eslint/restrict-template-expressions': 'error',
         '@typescript-eslint/return-await': 'error',
         '@typescript-eslint/semi': 'error',
-        '@typescript-eslint/sort-type-union-intersection-members': ['error', {checkIntersections: false}],
+        '@typescript-eslint/sort-type-constituents': ['error', {checkIntersections: false}],
         '@typescript-eslint/space-before-blocks': ['error', 'always'],
         '@typescript-eslint/space-before-function-paren': [
             'error',
