@@ -46,8 +46,7 @@
     "eslint-plugin-sort-destructure-keys": ">= 1"
   },
   "dependencies": {
-    "confusing-browser-globals": "^1.0.11",
-    "standard-version": "^9.5.0"
+    "confusing-browser-globals": "^1.0.11"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
@@ -71,7 +70,8 @@
     "eslint-plugin-react-hooks-ssr": "^0.1.5",
     "eslint-plugin-redos": "4.4.5",
     "eslint-plugin-security": "^1.7.1",
-    "eslint-plugin-sort-destructure-keys": "^1.5.0"
+    "eslint-plugin-sort-destructure-keys": "^1.5.0",
+    "standard-version": "^9.5.0"
   },
   "author": ".NFQ | Christoph Kruppe",
   "license": "ISC"
