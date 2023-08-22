@@ -1,13 +1,18 @@
 {
   "name": "@nfq/eslint-config",
-  "version": "2.4.4",
+  "version": "3.0.0",
   "engines": {
     "node": ">= 12.0.0"
   },
   "description": "Eslint configuration for all nfq projects",
   "main": "index.js",
+  "standard-version": {
+    "scripts": {
+      "prebump": "nfqBump"
+    }
+  },
   "scripts": {
-    "deploy": "standard-version && git push --follow-tags origin master && npm publish",
+    "deploy": "pnpm standard-version && git push --follow-tags origin master && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -41,7 +46,8 @@
     "eslint-plugin-sort-destructure-keys": ">= 1"
   },
   "dependencies": {
-    "confusing-browser-globals": "^1.0.11"
+    "confusing-browser-globals": "^1.0.11",
+    "standard-version": "^9.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",

@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/nfqde/eslint-config-nfq/compare/v2.4.4...v3.0.0) (2023-08-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Rules:** Update to jsdoc > 40 removes rules
+
+### Features
+
+* **Rules:** Update packages and remove deprecated rules ([#49](https://github.com/nfqde/eslint-config-nfq/issues/49)) ([8ee2233](https://github.com/nfqde/eslint-config-nfq/commit/8ee2233a1d1a365c9090de445031ab907a5ec2e3))
+
 ### [2.4.4](https://github.com/nfqde/eslint-config-nfq/compare/v2.4.3...v2.4.4) (2023-07-25)
 
 
