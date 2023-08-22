@@ -40,7 +40,6 @@ module.exports = {
 
             }
         ], // Controls how and whether jsdoc blocks can be expressed as single or multiple line blocks. https://github.com/gajus/eslint-plugin-jsdoc#multiline-blocks
-        'jsdoc/newline-after-description': ['error', 'always'], // Reports missing newline after description in JSDoc comments.
         'jsdoc/no-bad-blocks': 'error', // Reports invalid JSDoc block tags. https://github.com/gajus/eslint-plugin-jsdoc#no-bad-blocks
         'jsdoc/no-defaults': 'off', // Reports default params if used. https://github.com/gajus/eslint-plugin-jsdoc#no-defaults
         'jsdoc/no-missing-syntax': 'off', // Reports missing JSDoc syntax. https://github.com/gajus/eslint-plugin-jsdoc#no-missing-syntax
@@ -97,6 +96,6 @@ module.exports = {
         'jsdoc/require-yields': 'error', // Reports missing yields in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-yields
         'jsdoc/require-yields-check': 'error', // Reports missing yields in JSDoc comments. https://github.com/gajus/eslint-plugin-jsdoc#require-yields-check
         'jsdoc/sort-tags': 'off', // Reports unsorted JSDoc tags. https://github.com/gajus/eslint-plugin-jsdoc#sort-tags
-        'jsdoc/tag-lines': 'off' // Reports unsorted JSDoc tags. https://github.com/gajus/eslint-plugin-jsdoc#tag-lines
+        'jsdoc/tag-lines': ['error', 'any', {startLines: 1}] // Reports unsorted JSDoc tags. https://github.com/gajus/eslint-plugin-jsdoc#tag-lines
     }
 };
