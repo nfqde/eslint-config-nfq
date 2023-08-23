@@ -2,7 +2,7 @@
 module.exports = {
     rules: {
         '@nfq/no-magic-numbers': 'off',
-        '@typescript-eslint/no-unused-expressions': 'off',
+        '@typescript-eslint/no-unused-expression': 'off',
         'max-len': 'off',
         'max-lines': 'off',
         'max-lines-per-function': 'off',
