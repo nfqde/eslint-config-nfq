@@ -5,6 +5,7 @@ const SPACE_INDENT = 4;
 
 module.exports = {
     rules: {
+        '@nfq/object-property-newline': 'error', // enforce "same line" or "multiple line" on object properties. https://eslint.org/docs/rules/object-property-newline
         'array-bracket-newline': ['error', 'consistent'], // object option alternative: { multiline: true, minItems: 3 } enforce line breaks after opening and before closing array brackets https://eslint.org/docs/rules/array-bracket-newline
         'array-bracket-spacing': ['error', 'never'], // enforce spacing inside array brackets https://eslint.org/docs/rules/array-bracket-spacing
         'array-element-newline': ['error', 'consistent'], // enforce line breaks between array elements https://eslint.org/docs/rules/array-element-newline
@@ -279,7 +280,7 @@ module.exports = {
             {multiline: true}
         ], // enforce line breaks between braces https://eslint.org/docs/rules/object-curly-newline
         'object-curly-spacing': ['error', 'never'], // require padding inside curly braces https://eslint.org/docs/rules/object-curly-spacing
-        'object-property-newline': 'error', // enforce "same line" or "multiple line" on object properties. https://eslint.org/docs/rules/object-property-newline
+        'object-property-newline': 'off', // enforce "same line" or "multiple line" on object properties. https://eslint.org/docs/rules/object-property-newline
         'one-var': ['off', 'never'], // allow just one var statement per function https://eslint.org/docs/rules/one-var
         'one-var-declaration-per-line': ['error', 'always'], // require a newline around variable declaration https://eslint.org/docs/rules/one-var-declaration-per-line
         'operator-assignment': ['error', 'always'], // require assignment operator shorthand where possible or prohibit it entirely https://eslint.org/docs/rules/operator-assignment
@@ -301,19 +302,19 @@ module.exports = {
                 prev: ['const', 'let', 'var']
             },
             {
-                blankLine: "always",
-                prev: "directive",
-                next: "*"
+                blankLine: 'always',
+                prev: 'directive',
+                next: '*'
             },
             {
-                blankLine: "any",
-                prev: "directive",
-                next: "directive"
+                blankLine: 'any',
+                prev: 'directive',
+                next: 'directive'
             },
             {
-                blankLine: "always",
-                prev: "*",
-                next: "return"
+                blankLine: 'always',
+                prev: '*',
+                next: 'return'
             }
         ], // Require or disallow padding lines between statements https://eslint.org/docs/rules/padding-line-between-statements
         'prefer-exponentiation-operator': 'error', // Disallow the use of Math.pow in favor of the ** operator https://eslint.org/docs/rules/prefer-exponentiation-operator
