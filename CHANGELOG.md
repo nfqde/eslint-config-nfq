@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.1](https://github.com/nfqde/eslint-config-nfq/compare/v3.1.0...v3.1.1) (2023-10-09)
+
+
+### Bug Fixes
+
+* **Grid:** add grid color functions to no magic numbers exceptions ([#54](https://github.com/nfqde/eslint-config-nfq/issues/54)) ([9ab7276](https://github.com/nfqde/eslint-config-nfq/commit/9ab7276a9ad844fee3f65993ff81382ece3984bb))
+
 ## [3.1.0](https://github.com/nfqde/eslint-config-nfq/compare/v3.0.3...v3.1.0) (2023-10-05)
 
 
