@@ -127,7 +127,16 @@ module.exports = {
                 allowTernary: true
             }
         ],
-        '@typescript-eslint/no-unused-vars': 'error',
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                args: 'after-used',
+                argsIgnorePattern: '^e$',
+                caughtErrors: 'none',
+                ignoreRestSiblings: true,
+                vars: 'all'
+            }
+        ],
         '@typescript-eslint/no-use-before-define': [
             'error',
             {
