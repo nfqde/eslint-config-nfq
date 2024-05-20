@@ -10,6 +10,8 @@ module.exports = {
                 ignore: [0, 1],
                 ignoreArrayIndexes: true,
                 ignoreArrays: true,
+                ignoreClassFieldInitialValues: true,
+                ignoreDefaultValues: true,
                 ignoreFunctions: ['darken', 'lighten', 'setTimeout', 'setInterval', 'spacing', 'translucify', 'wait']
             }
         ], // disallow magic numbers http://eslint.org/docs/rules/no-magic-numbers
