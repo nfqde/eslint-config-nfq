@@ -17,8 +17,8 @@ devDependencies:
     specifier: ^7.23.3
     version: 7.23.3(@babel/core@7.23.6)(eslint@8.57.0)
   '@nfq/eslint-plugin':
-    specifier: ^0.8.0
-    version: 0.8.0
+    specifier: ^0.8.1
+    version: 0.8.1
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.14.0
     version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.0.4)
@@ -434,8 +434,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@nfq/eslint-plugin@0.8.0:
-    resolution: {integrity: sha512-YkuT/VI3DvDtUZsxVyxTnfShhL50FIZRfz7/DM+o0CWynj5d4biMu6iKa3v79pjGEAsQ+s87ok/MNdHOnzLC1g==}
+  /@nfq/eslint-plugin@0.8.1:
+    resolution: {integrity: sha512-vK4IKvKKdtDP+zwERm1Vj/VEh/tTLrbRf/DxlR+8qeF5yrI7PdZmlBkzxmD2JyHPl+ua58R0yOXAW073JCCbqg==}
     engines: {node: '>=0.10.0'}
     dependencies:
       natural-compare: 1.4.0

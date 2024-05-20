@@ -12,7 +12,7 @@ module.exports = {
                 ignoreArrays: true,
                 ignoreClassFieldInitialValues: true,
                 ignoreDefaultValues: true,
-                ignoreFunctions: ['darken', 'lighten', 'setTimeout', 'setInterval', 'spacing', 'translucify', 'wait']
+                ignoreFunctions: ['darken', 'lighten', 'setTimeout', 'setInterval', 'spacing', 'translucify', 'wait', 'toFixed']
             }
         ], // disallow magic numbers http://eslint.org/docs/rules/no-magic-numbers
         'accessor-pairs': [
