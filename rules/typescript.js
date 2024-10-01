@@ -3,7 +3,6 @@ module.exports = {
     rules: {
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': ['error', {default: 'array'}],
-        '@typescript-eslint/ban-types': 'error',
         '@typescript-eslint/brace-style': ['error', '1tbs', {allowSingleLine: false}],
         '@typescript-eslint/class-literal-property-style': 'error',
         '@typescript-eslint/comma-dangle': ['error', 'never'],
@@ -78,6 +77,7 @@ module.exports = {
         '@typescript-eslint/no-dynamic-delete': 'off',
         '@typescript-eslint/no-empty-function': ['error', {allow: ['arrowFunctions', 'methods', 'asyncMethods']}],
         '@typescript-eslint/no-empty-interface': 'error',
+        '@typescript-eslint/no-empty-object-type': 'error',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-extra-non-null-assertion': 'error',
         '@typescript-eslint/no-extra-semi': 'error',
@@ -117,6 +117,7 @@ module.exports = {
         '@typescript-eslint/no-unsafe-argument': 'error',
         '@typescript-eslint/no-unsafe-assignment': 'off',
         '@typescript-eslint/no-unsafe-call': 'error',
+        '@typescript-eslint/no-unsafe-function-type': 'error',
         '@typescript-eslint/no-unsafe-member-access': 'error',
         '@typescript-eslint/no-unsafe-return': 'error',
         '@typescript-eslint/no-unused-expressions': [
@@ -148,6 +149,7 @@ module.exports = {
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/no-useless-empty-export': 'error',
         '@typescript-eslint/no-var-requires': 'error',
+        '@typescript-eslint/no-wrapper-object-types': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'error',
         '@typescript-eslint/object-curly-spacing': ['error', 'never'],
         '@typescript-eslint/padding-line-between-statements': [
