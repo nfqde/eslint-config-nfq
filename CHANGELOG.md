@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.1](https://github.com/nfqde/eslint-config-nfq/compare/v3.3.0...v3.3.1) (2024-10-10)
+
+
+### Bug Fixes
+
+* **Plugins:** fix typo in rules ([#64](https://github.com/nfqde/eslint-config-nfq/issues/64)) ([7190b82](https://github.com/nfqde/eslint-config-nfq/commit/7190b82e637d617d10c96be73e95f5d3ef697829))
+
 ## [3.3.0](https://github.com/nfqde/eslint-config-nfq/compare/v3.2.2...v3.3.0) (2024-10-10)
 
 
