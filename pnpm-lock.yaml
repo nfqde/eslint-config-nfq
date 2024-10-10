@@ -19,6 +19,9 @@ devDependencies:
   '@nfq/eslint-plugin':
     specifier: ^0.8.2
     version: 0.8.2
+  '@stylistic/eslint-plugin-ts':
+    specifier: ^2.9.0
+    version: 2.9.0(eslint@8.57.1)(typescript@5.0.4)
   '@typescript-eslint/eslint-plugin':
     specifier: ^8.8.0
     version: 8.8.0(@typescript-eslint/parser@8.8.0)(eslint@8.57.1)(typescript@5.0.4)
@@ -467,6 +470,21 @@ packages:
 
   /@rtsao/scc@1.1.0:
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
+    dev: true
+
+  /@stylistic/eslint-plugin-ts@2.9.0(eslint@8.57.1)(typescript@5.0.4):
+    resolution: {integrity: sha512-CxB73paAKlmaIDtOfKoIHlhNJVlyRMVobuBqdOc4wbVSqfhbgpCWuJYpBkV3ydGDKRfVWNJ9yg5b99lzZtrjhg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=8.40.0'
+    dependencies:
+      '@typescript-eslint/utils': 8.8.0(eslint@8.57.1)(typescript@5.0.4)
+      eslint: 8.57.1
+      eslint-visitor-keys: 4.1.0
+      espree: 10.2.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
     dev: true
 
   /@types/json5@0.0.29:
