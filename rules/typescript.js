@@ -3,16 +3,7 @@ module.exports = {
     rules: {
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': ['error', {default: 'array'}],
-        '@typescript-eslint/brace-style': ['error', '1tbs', {allowSingleLine: false}],
         '@typescript-eslint/class-literal-property-style': 'error',
-        '@typescript-eslint/comma-dangle': ['error', 'never'],
-        '@typescript-eslint/comma-spacing': [
-            'error',
-            {
-                after: true,
-                before: false
-            }
-        ],
         '@typescript-eslint/consistent-generic-constructors': ['error', 'constructor'],
         '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
         '@typescript-eslint/consistent-type-assertions': ['error', {assertionStyle: 'as'}],
@@ -30,35 +21,8 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/explicit-member-accessibility': ['error', {accessibility: 'no-public'}],
         '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/func-call-spacing': ['error', 'never'],
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/init-declarations': 'off',
-        '@typescript-eslint/keyword-spacing': [
-            'error',
-            {
-                after: true,
-                before: true
-            }
-        ],
-        '@typescript-eslint/lines-between-class-members': [
-            'error',
-            'always',
-            {exceptAfterSingleLine: false}
-        ],
-        '@typescript-eslint/member-delimiter-style': [
-            'error',
-            {
-                multiline: {
-                    delimiter: 'semi',
-                    requireLast: true
-                },
-                multilineDetection: 'brackets',
-                singleline: {
-                    delimiter: 'semi',
-                    requireLast: false
-                }
-            }
-        ],
         '@typescript-eslint/member-ordering': [
             'error',
             {
@@ -80,7 +44,6 @@ module.exports = {
         '@typescript-eslint/no-empty-object-type': 'error',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-extra-non-null-assertion': 'error',
-        '@typescript-eslint/no-extra-semi': 'error',
         '@typescript-eslint/no-extraneous-class': 'off',
         '@typescript-eslint/no-floating-promises': 'error',
         '@typescript-eslint/no-for-in-array': 'error',
@@ -107,7 +70,6 @@ module.exports = {
         '@typescript-eslint/no-require-imports': 'warn',
         '@typescript-eslint/no-shadow': 'error',
         '@typescript-eslint/no-this-alias': ['error', {allowedNames: ['self']}],
-        '@typescript-eslint/no-throw-literal': 'error',
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/no-unnecessary-condition': 'error',
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
@@ -151,20 +113,7 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/no-wrapper-object-types': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'error',
-        '@typescript-eslint/object-curly-spacing': ['error', 'never'],
-        '@typescript-eslint/padding-line-between-statements': [
-            'error',
-            {
-                blankLine: 'always',
-                next: '*',
-                prev: ['const', 'let', 'var']
-            },
-            {
-                blankLine: 'any',
-                next: ['const', 'let', 'var'],
-                prev: ['const', 'let', 'var']
-            }
-        ],
+        '@typescript-eslint/only-throw-error': 'error',
         '@typescript-eslint/prefer-as-const': 'error',
         '@typescript-eslint/prefer-enum-initializers': 'off',
         '@typescript-eslint/prefer-for-of': 'error',
@@ -181,32 +130,15 @@ module.exports = {
         '@typescript-eslint/prefer-string-starts-ends-with': 'error',
         '@typescript-eslint/prefer-ts-expect-error': 'error',
         '@typescript-eslint/promise-function-async': 'error',
-        '@typescript-eslint/quotes': [
-            'error',
-            'single',
-            {avoidEscape: true}
-        ],
         '@typescript-eslint/require-array-sort-compare': 'off',
         '@typescript-eslint/require-await': 'error',
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/restrict-template-expressions': 'error',
         '@typescript-eslint/return-await': 'error',
-        '@typescript-eslint/semi': 'error',
         '@typescript-eslint/sort-type-constituents': ['error', {checkIntersections: false}],
-        '@typescript-eslint/space-before-blocks': ['error', 'always'],
-        '@typescript-eslint/space-before-function-paren': [
-            'error',
-            {
-                anonymous: 'never',
-                asyncArrow: 'always',
-                named: 'never'
-            }
-        ],
-        '@typescript-eslint/space-infix-ops': 'error',
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
         '@typescript-eslint/triple-slash-reference': 'error',
-        '@typescript-eslint/type-annotation-spacing': 'error',
         '@typescript-eslint/unified-signatures': 'error',
         'brace-style': 'off',
         'comma-dangle': 'off',

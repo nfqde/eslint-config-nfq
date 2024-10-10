@@ -47,6 +47,10 @@ pnpm install <Project name>
 
 The following PeerDependencies are needed so the component does work:
 
+- @nfq/eslint-plugin >= 0.8.0
+- @stylistic/eslint-plugin-ts >= 2
+- @typescript-eslint/eslint-plugin >= 6
+- @typescript-eslint/parser >= 6
 - eslint-import-resolver-alias >= 1
 - eslint-plugin-array-func >= 3
 - eslint-plugin-better-styled-components >= 1
