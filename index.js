@@ -33,7 +33,7 @@ module.exports = {
             plugins: ['@typescript-eslint', '@stylistic/ts'],
             rules: {
                 ...typescript.rules,
-                ...stylistic.rule
+                ...stylistic.rules
             }
         }
     ],
