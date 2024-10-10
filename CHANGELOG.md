@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](https://github.com/nfqde/eslint-config-nfq/compare/v3.2.2...v3.3.0) (2024-10-10)
+
+
+### Features
+
+* **Stylistic:** Add stylistic as migration for ts stylings ([#63](https://github.com/nfqde/eslint-config-nfq/issues/63)) ([8969123](https://github.com/nfqde/eslint-config-nfq/commit/8969123f4ea8bc5484cf26079a3215cd052137bd))
+
 ### [3.2.2](https://github.com/nfqde/eslint-config-nfq/compare/v3.2.1...v3.2.2) (2024-10-01)
 
 
