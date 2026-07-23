@@ -1,0 +1,22 @@
+export const eslint = {
+    'default-param-last': 'off',
+    'dot-notation': 'off',
+    'jsdoc/require-param-type': 'off',
+    'jsdoc/require-returns-type': 'off',
+    'no-array-constructor': 'off',
+    'no-dupe-class-members': 'off',
+    'no-empty-function': 'off',
+    'no-implied-eval': 'off',
+    'no-invalid-this': 'off',
+    'no-loop-func': 'off',
+    'no-loss-of-precision': 'off',
+    'no-redeclare': 'off',
+    'no-return-await': 'off',
+    'no-shadow': 'off',
+    'no-throw-literal': 'off',
+    'no-undefined': 'off',
+    'no-unused-expressions': 'off',
+    'no-unused-vars': 'off',
+    'no-use-before-define': 'off',
+    'no-useless-constructor': 'off'
+};

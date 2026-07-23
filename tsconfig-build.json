@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": false,
+    "isolatedModules": false,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noImplicitAny": true,
+    "paths": {},
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "declarationDir": "types",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "target": "es6",
+    "types": ["node", "cypress"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "globalTypes/**/*.d.ts"],
+  "exclude": ["node_modules", "dist", "old"]
+}
