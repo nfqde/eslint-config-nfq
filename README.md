@@ -6,19 +6,24 @@
 
 ---
 
-1. [Description](#description)
-2. [Getting started](#getting-started)
-    1. [Installation](#installation)
-    2. [PeerDependencies](#peerdependencies)
-3. [Usage](#usage)
-4. [Props](#props)
-5. [Support](#support)
+- [eslint-config-nfq](#eslint-config-nfq)
+  - [Description: ](#description-)
+  - [Getting started](#getting-started)
+    - [Installation](#installation)
+    - [PeerDependencies](#peerdependencies)
+  - [Usage](#usage)
+  - [Custom rules](#custom-rules)
+  - [Extending the config](#extending-the-config)
+    - [Extend settings](#extend-settings)
+    - [Extend globals](#extend-globals)
+    - [Extend rules](#extend-rules)
+  - [Support](#support)
 
 ---
 
 ## Description: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is a comprehensive ESLint configuration used by .NFQ. It includes a wide range of rules for JavaScript, TypeScript, React, and more.
+This is the shared ESLint configuration used by .NFQ projects. It targets ESLint flat config, includes JavaScript, TypeScript, React, and Cypress overrides, and ships a small set of custom `@nfq/*` rules.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -26,47 +31,23 @@ This is a comprehensive ESLint configuration used by .NFQ. It includes a wide ra
 
 ## Getting started
 
-To setup the project locally follow the next steps:
-
 ### Installation
 
-To install the package run
 ```sh
-npm install <Project name>
+npm install -D @nfq/eslint-config
 ```
-if you are on yarn
-```sh
-yarn add <Project name>
-```
-or on pnpm
-```sh
-pnpm install <Project name>
-```
-   
-### PeerDependencies:
 
-The following PeerDependencies are needed so the component does work:
+```sh
+yarn add -D @nfq/eslint-config
+```
 
-- @nfq/eslint-plugin >= 0.8.0
-- @stylistic/eslint-plugin-ts >= 2
-- @typescript-eslint/eslint-plugin >= 6
-- @typescript-eslint/parser >= 6
-- eslint-import-resolver-alias >= 1
-- eslint-plugin-array-func >= 3
-- eslint-plugin-better-styled-components >= 1
-- eslint-plugin-import >= 2
-- eslint-plugin-jsdoc >= 43
-- eslint-plugin-jsx-a11y >= 6
-- eslint-plugin-no-unsanitized >= 4
-- eslint-plugin-node >= 11
-- eslint-plugin-perf-standard >= 1
-- eslint-plugin-promise >= 6
-- eslint-plugin-react >= 7
-- eslint-plugin-react-hooks >= 4
-- eslint-plugin-react-hooks-ssr >= 0.1.5
-- eslint-plugin-redos >= 4
-- eslint-plugin-security >= 1
-- eslint-plugin-sort-destructure-keys >= 1
+```sh
+pnpm add -D @nfq/eslint-config
+```
+
+### PeerDependencies
+
+- eslint >= 9
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -74,23 +55,116 @@ The following PeerDependencies are needed so the component does work:
 
 ## Usage
 
-After installing the package and its peer dependencies, you can use it in your ESLint configuration file:
+Create `eslint.config.mjs` (flat config) and follow the structure used in this repo:
 
-```json
-{
-  "extends": [
-    "@nfq"
-  ]
-}
+```js
+import {defineConfig} from 'eslint/config';
+
+import {NFQEslintConfig} from '@nfq/eslint-config';
+
+export default defineConfig([
+    {
+        extends: [NFQEslintConfig],
+        ignores: [
+            'dist/**/*',
+            'types/**/*'
+        ]
+    }
+]);
 ```
+
+This config provides:
+- JS, TS, and Cypress overrides
+- TypeScript parser and project discovery
+- Shared plugins and settings
+- Defaults for globals and common resolvers
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
 
-## Rules
+## Custom rules
 
-This configuration includes a wide range of rules for JavaScript, TypeScript, React, and more. You can find the specific rules in the rules directory.
+All custom rules live under the `@nfq` namespace.
+
+| Rule | Description |
+| --- | --- |
+| [@nfq/component-file-structure](docs/rules/component-file-structure.md) | Enforce React component file layout, displayName assignment, and named exports. |
+| [@nfq/component-single-hook](docs/rules/component-single-hook.md) | Allow at most one hook call plus guard clauses and returns in component bodies. |
+| [@nfq/cypress-mount-hook](docs/rules/cypress-mount-hook.md) | Enforce cy.mountHook(s) usage and required then chaining in Cypress tests. |
+| [@nfq/hexagonal-dependency-direction](docs/rules/hexagonal-dependency-direction.md) | Enforce hexagonal dependency direction and boundary-specific imports. |
+| [@nfq/no-empty-lines-in-objects](docs/rules/no-empty-lines-in-objects.md) | Disallow empty lines inside object literals. |
+| [@nfq/no-empty-lines-in-types](docs/rules/no-empty-lines-in-types.md) | Disallow empty lines inside TypeScript interface and type literal bodies. |
+| [@nfq/no-magic-numbers](docs/rules/no-magic-numbers.md) | Disallow magic numbers with configurable exceptions. |
+| [@nfq/no-unbound-method](docs/rules/no-unbound-method.md) | Warn on unbound class methods used as callbacks and forbid constructor binding. |
+| [@nfq/object-property-newline](docs/rules/object-property-newline.md) | Enforce object properties on separate lines, with configurable exceptions. |
+| [@nfq/require-getcy](docs/rules/require-getcy.md) | Require cy.getCy instead of cy.get (except aliases). |
+| [@nfq/sort-keys](docs/rules/sort-keys.md) | Require object keys to be sorted. |
+| [@nfq/styled-components-order](docs/rules/styled-components-order.md) | Enforce styled component definition order and dependency order. |
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+---
+
+## Extending the config
+
+You can extend settings, globals, and rules without redeclaring everything by importing the exported helpers.
+
+### Extend settings
+
+```js
+import {NFQEslintConfig, settings} from '@nfq/eslint-config';
+
+export default [
+    ...NFQEslintConfig,
+    {
+        settings: {
+            ...settings.settings,
+            '@nfq': {
+                ...settings.settings['@nfq'],
+                ignoredProperties: ['xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl']
+            }
+        }
+    }
+];
+```
+
+### Extend globals
+
+```js
+import {NFQEslintConfig, globals} from '@nfq/eslint-config';
+
+export default [
+    ...NFQEslintConfig,
+    {
+        languageOptions: {
+            globals: {
+                ...globals,
+                MY_GLOBAL: 'readonly'
+            }
+        }
+    }
+];
+```
+
+### Extend rules
+
+```js
+import {NFQEslintConfig} from '@nfq/eslint-config';
+import {nfq} from '@nfq/eslint-config/rules/common/plugins';
+
+export default [
+    ...NFQEslintConfig,
+    {
+        rules: {
+            '@nfq/no-magic-numbers': [nfq['@nfq/no-magic-numbers'][0], {
+                ...nfq['@nfq/no-magic-numbers'][1],
+                ignoreFunctions: [...nfq['@nfq/no-magic-numbers'][1].ignoreFunctions, 'myFunction']
+            }]
+        }
+    }
+];
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -98,6 +172,6 @@ This configuration includes a wide range of rules for JavaScript, TypeScript, Re
 
 ## Support
 
-Christoph Kruppe - [https://github.com/ckruppe] - c.kruppe@nfq.de  
+Christoph Kruppe - [https://github.com/ckruppe] - c.kruppe@nfq.de
 
 <p align="right">(<a href="#top">back to top</a>)</p>

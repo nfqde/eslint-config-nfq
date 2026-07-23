@@ -1,1 +1,9 @@
+.nyc_output
+coverage
+cypress/videos
+dist
 node_modules
+cypress/reports/
+tsconfig.tsbuildinfo
+types
+.history
